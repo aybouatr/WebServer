@@ -10,25 +10,20 @@
 
 </div>
 
-👥 Authors & Contributions
-🧑‍💻 Ayoub Bouatrouss
+## 👥 Authors & Contributions
 
-Multiplexing
+### 🧑‍💻 Ayoub Bouatrouss
+- Multiplexing
+- HTTP Request Parsing
+- Request Routing
 
-HTTP Request Parsing
+### 🧑‍💻 Yassir
+- Configuration File Parsing
+- Session Management
+- Cookies Handling
+- CGI Implementation
 
-Request Routing
-
-🧑‍💻 Yassir
-
-Configuration File Parsing
-
-Session Management
-
-Cookies Handling
-
-CGI Implementation
-42 Network - School Project
+**42 Network - School Project**
 
 ---
 
@@ -49,7 +44,7 @@ CGI Implementation
 
 ## 🎯 About
 
-**WebServ** is a high-performance HTTP/1.1 server written in C++98 as part of the 42 school curriculum. This project implements core web server functionalities including request parsing, response generation, CGI execution, file uploads/downloads, and advanced routing capabilities.
+**WebServ** is a high-performance HTTP/1.1 server written in C++98 as part of the 42 school curriculum. This project implements core web server functionalities including request parsing, response generation, CGI execution, and file handling.
 
 The server is designed to handle multiple simultaneous connections efficiently using epoll event notification, making it suitable for real-world applications while maintaining strict C++98 standard compliance.
 
@@ -137,8 +132,8 @@ The server is designed to handle multiple simultaneous connections efficiently u
 
 ```bash
 # Clone the repository
-git clone https://github.com/yssrexe/webservHTTP.git
-cd webservHTTP
+git clone https://github.com/aybouatr/WebServer.git
+cd WebServer
 
 # Compile the project
 make
@@ -246,7 +241,7 @@ Open your browser and navigate to:
 ## 📁 Project Structure
 
 ```
-webservHTTP/
+WebServer/
 ├── main.cpp                        # Entry point
 ├── Makefile                        # Build configuration
 ├── webserv.conf                    # Server configuration
@@ -450,8 +445,8 @@ This project is created as part of the common core curriculum at 42 Network scho
 
 <div align="center">
 
-**Made with ❤️ by Yassir El Yasini & Ayoub Bouatrouss**
+**Made with ❤️ by Ayoub Bouatrouss & Yassir**
 
-*1337(42) School - 2026*
+*1337 (42 School) - 2026*
 
 </div>
