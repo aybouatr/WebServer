@@ -16,6 +16,7 @@
 - Multiplexing
 - HTTP Request Parsing
 - Request Routing
+- Method : POST & DELETE & POST
 
 ### 🧑‍💻 Yassir
 - Configuration File Parsing
@@ -57,7 +58,6 @@ The server is designed to handle multiple simultaneous connections efficiently u
 - ✅ **Multiple HTTP Methods** - GET, POST, DELETE support
 - ✅ **Non-blocking I/O** - Asynchronous event-driven architecture using epoll
 - ✅ **Configuration File** - Flexible NGINX-like configuration syntax
-- ✅ **Multiple Virtual Servers** - Host multiple websites on different ports
 - ✅ **Custom Error Pages** - Personalized error responses (200-504)
 - ✅ **Route-Based Handling** - Advanced URL routing system
 
