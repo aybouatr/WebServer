@@ -284,7 +284,6 @@ void clsServer::_HandleTimeOutforNoCGI(int client_fd)
 {
     if (!clientToServer.count(client_fd))
         return;
-    std::cout << "hello from "
     MySpace::BufferRequest buffer = _InitBuffersWithFlags();
     clsResponse ErrorResponse(HTTP_TIME_OUT, buffer, client_fd, mapServers[clientToServer[client_fd]]);
     ErrorResponse.SendResponse();
