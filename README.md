@@ -10,10 +10,24 @@
 
 </div>
 
-## 👥 Authors
+👥 Authors & Contributions
+🧑‍💻 Ayoub Bouatrouss
 
-**Yassir El Yasini** & **Ayoub Bouatrouss**
+Multiplexing
 
+HTTP Request Parsing
+
+Request Routing
+
+🧑‍💻 Yassir
+
+Configuration File Parsing
+
+Session Management
+
+Cookies Handling
+
+CGI Implementation
 42 Network - School Project
 
 ---
