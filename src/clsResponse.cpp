@@ -125,7 +125,7 @@ void clsResponse::_performentDelete(std::string path)
     std::stringstream response ;
 
 
-    response << "HTTP/1.1 " << HTTP_SUCCESS << " " << MySpace::getStatusReason(HTTP_SUCCESS) << "\r\n";
+    response << "HTTP/1.1 " << HTTP_NO_CONTENT << " " << MySpace::getStatusReason(HTTP_NO_CONTENT) << "\r\n";
     response << "Content-Type: "<< MySpace::getContentType(path) << "\r\n";
     response << "Content-Length: " << 0 << "\r\n";
     response << "Connection: close\r\n";
@@ -133,7 +133,7 @@ void clsResponse::_performentDelete(std::string path)
 
     if (std::remove(path.c_str()) != 0)
     {
-        std::cout << "hna 1" << std::endl;
+        std::cout << "failded remove" << std::endl;
         throw HTTP_INTERNAL_SERVER_ERROR;
     }
         
@@ -157,7 +157,7 @@ void clsResponse::_performentPost()
     _Buffer.BufferWrite.isComplete = true;
 }
 
-void clsResponse::sendRedirect(const std::string& redirectPath, int statusCode)
+void clsResponse::sendRedirect(const std::string redirectPath, int statusCode)
 {
     std::stringstream response;
     std::string statusMessage;
@@ -166,13 +166,7 @@ void clsResponse::sendRedirect(const std::string& redirectPath, int statusCode)
         statusMessage = "Moved Permanently";
     else if (statusCode == 302)
         statusMessage = "Found";
-    else if (statusCode == 303)
-        statusMessage = "See Other";
-    else if (statusCode == 307)
-        statusMessage = "Temporary Redirect";
-    else
-        statusMessage = "Moved";
-    
+ 
     response << "HTTP/1.1 " << statusCode << " " << statusMessage << "\r\n";
     response << "Location: " << redirectPath << "\r\n";
     response << "Content-Length: 0\r\n";

@@ -27,8 +27,6 @@ int main(int argc, char **argv)
         serv.checkServers();
         //here we gunna start ...
         std::cout << "Config file parsed successfully. Starting server..." << std::endl;
-        // serv.servers[0].routes[0].redirect[301] = "https://www.google.com";
-        // std::cout <<"output : " << serv.servers[0].routes[1].redirect[301] << std::endl;
         clsServer clsServers(serv.servers);
         clsServers.Run();
     }
