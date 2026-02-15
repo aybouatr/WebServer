@@ -18,7 +18,7 @@
 - Routing
 - Request Parsing
 
-**Yassir ** ([@Yassir](https://github.com/yssrexe))
+**Yassir El Yasini** ([@Yassir](https://github.com/yssrexe))
 - CGI Implementation
 - Session Management
 - Cookies
@@ -370,12 +370,6 @@ Comprehensive error page support for HTTP status codes:
 - 2xx: Success (200, 204)
 - 4xx: Client errors (400, 401, 403, 404, 405, 408, 409, 413, 414, 415)
 - 5xx: Server errors (500, 502, 504)
-
-### Memory Management
-- RAII principles for resource management
-- Proper cleanup in destructors
-- Buffer size: 4096 bytes per connection
-- No memory leaks (C++98 compliant)
 
 ### Standards Compliance
 - **C++98 Standard** - Full compliance
