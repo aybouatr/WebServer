@@ -1,6 +1,6 @@
 # WebServ - HTTP Server Implementation
 
-<div align="center">
+<div align="center"> 
 
 ![C++](https://img.shields.io/badge/C++-98-blue.svg)
 ![42 School](https://img.shields.io/badge/42-School-000000?logo=42)
